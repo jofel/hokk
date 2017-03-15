@@ -41,6 +41,12 @@ $(document).ready(function(){
       scrollTop: $('.portfolio').offset().top
     },1200)
   });
+  // scroll to portfolio section
+  $('.about').click(function() {
+  $('html, body').animate({
+    scrollTop: $('.team').offset().top
+  },1200)
+});
   // see our work button animates to portfolio section
   $('.scroll-port').click(function() {
     $('html, body').animate({
@@ -50,7 +56,7 @@ $(document).ready(function(){
   // scroll for about page. When the button is clicked, it will animate to a specific section, by id or class.
   $('.team-scroll').click(function() {
     $('html, body').animate({
-      scrollTop: $('.team-profiles').offset().top
+      scrollTop: $('.team').offset().top
     }, 1200)
   });
 
