@@ -25,6 +25,15 @@ body {
   margin: 0;
 }
 
+.bodyoutline
+{
+    position: relative;
+    min-width: 1366px;
+    max-width: 2048px;
+    margin: 0px auto;
+    width: 100%;
+}
+
 article,
 aside,
 details,
