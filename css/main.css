@@ -30,6 +30,7 @@ aside,
 details,
 figcaption,
 figure,
+figure2,
 footer,
 header,
 hgroup,
@@ -120,6 +121,9 @@ svg:not(:root) {
 }
 
 figure {
+  margin: 1em 40px;
+}
+figure2 {
   margin: 1em 40px;
 }
 
@@ -579,6 +583,10 @@ input[type="button"]:focus {
   color: #00a8ff;
 }
 
+.orange {
+  color: #FF7E00;
+}
+
 #toggle {
   float: right;
   margin-top: 1.5rem;
@@ -619,6 +627,16 @@ input[type="button"]:focus {
   margin-top: 1rem;
 }
 
+.header2 {
+  background-image: url(../img/tappancs/tappancs.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  min-height: 22rem;
+  position: relative;
+  margin-top: 1rem;
+}
+
 .header h1 {
   font-family: 'querroundregular', 'helvetica', 'arial';
   text-align: center;
@@ -635,7 +653,29 @@ input[type="button"]:focus {
   font-weight: 300;
 }
 
+.header2 h1 {
+  font-family: 'querroundregular', 'helvetica', 'arial';
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 2em;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
 .header h1::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.header2 h1::after {
   clear: both;
   content: "";
   display: table;
@@ -956,7 +996,7 @@ h4 {
 }
 
 footer {
-  background-color: #cbcbcb;
+  background-color: #FF7E00;
   min-height: 8em;
   width: 100%;
 }
@@ -1071,9 +1111,14 @@ footer {
   font-weight: bold;
 }
 
-figure img {
+figure2 img {
   max-width: 200px;
   border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+figure img {
+  max-width: 200px;
   display: block;
   margin: 0 auto;
 }
