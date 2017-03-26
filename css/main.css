@@ -935,11 +935,12 @@ h4 {
 }
 
 .img-container:hover img {
-    -webkit-transform:scale(1.25); /* Safari and Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* IE 9 */
-    -o-transform:scale(1.25); /* Opera */
-     transform:scale(1.25);
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -moz-transform:scale(1.5); /* Firefox */
+    -ms-transform:scale(1.5); /* IE 9 */
+    -o-transform:scale(1.5); /* Opera */
+     transform:scale(1.5);
+     transition:transform .5s ease;
 }
 
 .contact-cta {
