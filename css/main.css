@@ -630,13 +630,17 @@ input[type="button"]:focus {
 }
 
 .header {
-  background-image: url(../img/header-img-min.png);
+  background-image: url(../img/header-img-min2.png);
   background-size: cover;
   background-position: center center;
   background-attachment: scroll;
   min-height: 22rem;
   position: relative;
   margin-top: 1rem;
+
+}
+#comming {
+  color: black;
 }
 
 .header2 {

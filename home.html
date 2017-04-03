@@ -13,7 +13,7 @@
   <script src="js/jquery-2.1.4.min.js"> </script>
 </head>
 <body>
-  <div class="bodyoutline">
+
   <div id="rel">
     <div class="mobile-nav">
       <i class="fa fa-times"> </i>
@@ -27,7 +27,7 @@
 
   <div class="pos-fixed">
     <div class="container">
-      <div class="logo"><a href='#'> <span class="blue">H</span>erman <span class="blue">Ö</span>ssz-<span class="blue">K</span>olitikai <span class="blue">K</span>oalíció </a> </div>
+      <div class="logo"><a href='#'> <span class="blue">H</span><span class="blue">Ö</span><span class="blue">K</span><span class="blue">K</span></a> </div>
       <div id="toggle">
         <i class="fa fa-bars fa-2x"> </i>
         </div>
@@ -48,9 +48,40 @@
   <!-- begin header -->
     <header>
     <div class="header">
-      <h1> DISNO-bol nem les salonna!!! </h1>
+      <h1 id="comming"> DISNO-bol nem les salonna!!! </h1>
       <!--<div class="button pos-button scroll-port"> View our work</div>-->
       <!-- ends header below -->
+      <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Jan 5, 2017 15:37:25").getTime();
+      var countDownDate = new Date("Apr 24, 2017 00:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+          // Get todays date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now an the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Output the result in an element with id="demo"
+          document.getElementById("comming").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+          // If the count down is over, write some text
+          if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("comming").innerHTML = "EXPIRED";
+          }
+      }, 1000);
+      </script>
     </div>
     </header>
     <!-- end header -->
@@ -372,6 +403,6 @@ Kérlek támogass Te is szavazatoddal a közelgő DISNO Kolimányzati választá
     </div>
     </footer>
     <script src="js/functions-min.js" async> </script>
-  </div>
+
   </body>
 </html>
